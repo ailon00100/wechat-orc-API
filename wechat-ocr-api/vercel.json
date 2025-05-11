@@ -1,0 +1,16 @@
+{
+  "version": 2,
+  "builds": [
+    {
+      "src": "api/ocr.py",
+      "use": "@vercel/python"
+    }
+  ],
+  "routes": [
+    {
+      "src": "/ocr",
+      "methods": ["POST"],
+      "dest": "api/ocr.py"
+    }
+  ]
+}
